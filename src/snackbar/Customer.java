@@ -36,10 +36,18 @@ public class Customer {
 
     // Other fun methods :)
     public void addCashOnHand(double cashOnHand) {
+        System.out.println(name + " just found $" + cashOnHand + "!");
         this.cashOnHand += cashOnHand;
     }
 
     public void buySnacks(double totalCost) {
         this.cashOnHand -= totalCost;
+    }
+
+    @Override
+    public String toString() {
+        String returnValue = "Name: " + name + "\n" +
+        "Cash on Hand: $" + cashOnHand;
+        return returnValue;
     }
 }

@@ -57,18 +57,28 @@ public class Snack{
 
     // Other cool methods :)
     public void addQuantity(int quantity) {
+        System.out.println("\n" + "Added " + 
+        quantity + " " + name + "'s");
         this.quantity += quantity;
     }
 
-    public void buySnack(int quantity) {
-        // Buy the quantity given?
+    public void buySnack(int quantity, String customerName) {
+        System.out.println("\n" + customerName + 
+        " buys " + quantity + 
+        " things of " + name);
+
+        this.quantity -= quantity;
     }
 
-    public void totalCostFor(int quantity) {
-        // how much for all them SNACKS!!
+    public double totalCostFor(int quantity) {
+        return (quantity * cost);
     }
 
-
-
-
+    @Override
+    public String toString() {
+        String returnValue = "Item Name: " + name + 
+        "\n" + "New Quantity: " 
+        + quantity + "\n";
+        return returnValue;
+    }
 }
