@@ -196,12 +196,12 @@ Create the classes mentioned above and then instantiate these objects from those
 
 ### Stretch Goals
 
-* [ ] Display each snack with
-  * [ ] Name
-  * [ ] Vending Machine Name
-  * [ ] Quantity on hand
-  * [ ] Total cost of all of the quantities of this snack on hand
+* [x] Display each snack with
+  * [x] Name
+  * [x] Vending Machine Name
+  * [x] Quantity on hand
+  * [x] Total cost of all of the quantities of this snack on hand
 * [ ] Format all dollar amount like $1,234.56
-  * [ ] Starts with a dollar sign
+  * [x] Starts with a dollar sign
   * [ ] comma separating group of 3 numbers
   * [ ] rounded to the nearest cents, hundredths place

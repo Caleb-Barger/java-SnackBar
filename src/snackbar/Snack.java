@@ -62,10 +62,15 @@ public class Snack{
         this.quantity += quantity;
     }
 
-    public void buySnack(int quantity, String customerName) {
+    public void buySnack(int quantity, String customerName, String machineName) {
+
+        double costToPurchaseAll = (this.quantity * cost);
+
         System.out.println("\n" + customerName + 
         " buys " + quantity + 
-        " things of " + name);
+        " things of " + name + " from " + machineName);
+        System.out.println("Old Stock: " + this.quantity 
+        + "\n" + "Total for all Stock: $" + costToPurchaseAll);
 
         this.quantity -= quantity;
     }

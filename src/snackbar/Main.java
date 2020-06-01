@@ -29,18 +29,18 @@ public class Main {
         //-------------------------------------------------------------
 
         // Jane
-        snk4.buySnack(3, cust1.getName());
+        snk4.buySnack(3, cust1.getName(), vendMach1.getName());
         cust1.buySnacks(snk4.totalCostFor(3));
         System.out.println(cust1.toString());
         System.out.println(snk4.toString());
 
-        snk3.buySnack(1, cust1.getName());
+        snk3.buySnack(1, cust1.getName(), vendMach1.getName());
         cust1.buySnacks(snk3.totalCostFor(1));
         System.out.println(cust1.toString());
         System.out.println(snk3.toString());
 
         // Bob
-        snk4.buySnack(2, cust2.getName());
+        snk4.buySnack(2, cust2.getName(), vendMach2.getName());
         cust2.buySnacks(snk4.totalCostFor(2));
         System.out.println(cust2.toString());
         System.out.println(snk4.toString());
@@ -48,7 +48,7 @@ public class Main {
         // More Jane action
         cust1.addCashOnHand(10.00);
         System.out.println(cust1.toString());
-        snk2.buySnack(1, cust1.getName());
+        snk2.buySnack(1, cust1.getName(), vendMach1.getName());
         cust1.buySnacks(snk2.totalCostFor(1));
         System.out.println(cust1.toString());
         System.out.println(snk2.toString());
@@ -56,7 +56,7 @@ public class Main {
         // Restock
         snk3.addQuantity(12);
         System.out.println(snk3.toString());
-        snk3.buySnack(3, cust2.getName());
+        snk3.buySnack(3, cust2.getName(), vendMach1.getName());
         cust2.buySnacks(snk3.totalCostFor(3));
         System.out.println(cust2.toString());
         System.out.println(snk3.toString());
